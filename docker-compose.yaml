@@ -1,0 +1,18 @@
+services:
+  nginx: #name of the service
+    build:
+      context: . #build image from nginx:latest in Dockerfile
+    ports:
+      - "8080:80" #define the ports
+    volumes:
+      - ./html/:/usr/share/nginx/html #html folder will map to default nginx html folder 
+
+
+
+
+
+
+
+
+
+
